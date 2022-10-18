@@ -36,3 +36,10 @@ int main()
     cout << s.canConstruct("aa", "aab") << endl;
     return 0;
 }
+
+//Approach:
+//Iterate through each character of the string ransomNote by using a for loop and check if the character is present in the string magazine. 
+//If all the characters in string ransoneNote is present in string magazine then return true or else return false. 
+
+// Time complexity: O(n)
+// Space complexity: O(1)
