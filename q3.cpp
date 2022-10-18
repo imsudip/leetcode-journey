@@ -3,7 +3,7 @@ Author: Sudip Ghosh (sudipghosh9333@gmail.com)
 q3.cpp (c) 2022
 Desc: Longest substring without repeating characters
 Created:  2022-08-29T16:16:33.650Z
-Modified: 2022-08-29T16:36:48.183Z
+Modified: 2022-09-05T15:41:15.972Z
 */
 
 #include <bits/stdc++.h>
@@ -29,12 +29,6 @@ public:
         }
         return lString;
     }
-    // explanation for the above solution:
-    // we start from the beginning of the string and keep track of the start and end of the substring.
-    // we keep track of the count of each character in the substring.
-    // if the count of the character is greater than 1, we move the start of the substring to the next character.
-    // we keep track of the maximum length of the substring.
-    // we return the maximum length of the substring.
 };
 
 int main()
@@ -44,3 +38,21 @@ int main()
     cout << s.lengthOfLongestSubstring(str);
     return 0;
 }
+
+// question: Given a string s, find the length of the longest substring without repeating characters.
+
+// Approach: Sliding window
+// We can use a sliding window to solve this problem. The sliding window is a technique that uses two pointers to keep track of a substring in a string. The two pointers are the start and end of the substring.
+// We use the end pointer to expand the substring until we get a repeating character in the substring. At this point, we contract (start pointer) and repeat the same process again until we get a substring without any repeating characters.
+//
+// The algorithm is as follows:
+// 1. Create a set to store the characters in the current window.
+// 2. Create some variables lString to store the length of the longest substring without repeating characters, start to store the start of the current window, and end to store the end of the current window.
+// 3. Loop through the string s from start to end.
+// 4. If the character at the end pointer is not in the set, then add it to the set and increment the end pointer.
+// 5. If the character at the end pointer is in the set, then remove the character at the start pointer from the set and increment the start pointer.
+// 6. Update the length of the longest substring without repeating characters.
+// 7. Return the length of the longest substring without repeating characters.
+
+// Time complexity: O(n)
+// Space complexity: O(1)
