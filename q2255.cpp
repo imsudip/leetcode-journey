@@ -1,3 +1,9 @@
+/*
+Author: Prativa Chakraborty (2000prativa@gmail.com)
+q2255.cpp (c) 2022
+Desc: Count Prefixes of a Given String
+
+*/
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
