@@ -1,3 +1,9 @@
+/*
+Author: Prativa Chakraborty (2000prativa@gmail.com)
+q1662.cpp (c) 2022
+Desc: Check If Two String Arrays are Equivalent
+
+*/
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
