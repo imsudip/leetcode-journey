@@ -2,5 +2,10 @@
     "files.exclude": {
       "**/*.exe": true, 
     
+    },
+    "files.associations": {
+      "*.tcc": "cpp",
+      "random": "cpp",
+      "iostream": "cpp"
     }
   }
