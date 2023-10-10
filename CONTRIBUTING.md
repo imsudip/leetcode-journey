@@ -1,13 +1,15 @@
 # Contributing
 
-When contributing to this repository, please first check if the Solution already exist or not. If you wish to provide a different 
-approach to same problem make the file as `q{question_number}_v{version_number}.cpp`
+When contributing to this repository, please first check if the Solution already exist or not. If you wish to provide a different approach to same problem make the file as `q{question_number}_v{version_number}.cpp`
 
 Every file should include these Section:
 
 ### 1. Details
+
 Author name and their details.
+
 > Note Created and Modified time are not mandatory
+
 ```c
 /*
 EXAMPLE
@@ -18,22 +20,26 @@ Created:  Sun Sep 18 2022 09:04:48 GMT+0530 (India Standard Time)
 Modified: 2022-09-18T03:36:21.124Z
 */
 ```
+
 ### 2. Code
 
 ### 3. Approach
+
 Write your approach to the problem with proper explanation
+
 ```c
 // Approach:
 // After looking at the question, I thought of using a 2D array to store the characters in the zigzag pattern. But, I realized that it would be a waste of space. So, I thought of using a vector of strings to store the characters in the zigzag pattern. I used a boolean variable goingDown to keep track of the direction of the zigzag pattern. If goingDown is true, then I increment the row number. If goingDown is false, then I decrement the row number. I used a for loop to iterate through the string s. I used a if-else statement to check if the row number is 0 or numRows - 1. If it is, then I change the value of goingDown. I used a for loop to iterate through the vector of strings and append the characters to the string ans. I returned the string ans.
 ```
 
 ### 4. Complexity Analysis
+
 Write your time and space complexity
+
 ```c
 // Time complexity: O(n^2)
 // Space complexity: O(1)
 ```
-
 
 ## ✅Pull Request Process
 
@@ -58,21 +64,21 @@ orientation.
 Examples of behavior that contributes to creating a positive environment
 include:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive criticism
+- Focusing on what is best for the community
+- Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
+- The use of sexualized language or imagery and unwelcome sexual attention or
+  advances
+- Trolling, insulting/derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or electronic
   address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
+- Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
 ### Our Responsibilities
