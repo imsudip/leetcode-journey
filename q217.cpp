@@ -22,6 +22,7 @@ public:
 };
 
 /*
+ Link : https://leetcode.com/problems/contains-duplicate/
  Question :Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
  Approach:
   1. Take an empty unordered set which store all the unique element from the input.
