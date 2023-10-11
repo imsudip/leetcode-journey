@@ -6,6 +6,7 @@ You are given an API bool isBadVersion(version) which returns whether version is
 // The API isBadVersion is defined for you.
 // bool isBadVersion(int version);
 #include<bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int firstBadVersion(int n) {
