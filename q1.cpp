@@ -1,43 +1,41 @@
-/*
-Author: Sudip Ghosh (sudipghosh9333@gmail.com)
-q1.cpp (c) 2022
-Desc: Two sum
-Created:  2022-08-29T15:52:21.420Z
-Modified: 2022-09-03T16:23:52.028Z
-*/
+
 
 #include <bits/stdc++.h>
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    vector<int> twoSum(vector<int> &nums, int target)
-    {
-        vector<int> ans;
-        for (int i = 0; i < nums.size(); i++)
-        {
-            for (int j = i + 1; j < nums.size(); j++)
-            {
-                if (nums[i] + nums[j] == target)
-                {
-                    ans.push_back(i);
-                    ans.push_back(j);
-                    return ans;
-                }
-            }
-        }
-        return ans;
+    vector<int> twoSum(vector<int>& nums, int target) {
+      vector<int> cpy;
+      cpy=nums;
+      vector<int> ret;
+      sort(nums.begin(),nums.end());
+      int i=0,tosearch,idx=-1;
+      for(i=0;i<nums.size();i++){
+          tosearch=target-nums[i];
+          idx=lower_bound(nums.begin()+i+1,nums.end(),tosearch)-nums.begin();
+          if(idx>=0&&idx<nums.size()&&nums[i]+nums[idx]==target){
+            break;
+          }  
+      }
+      for(int k=0;k<cpy.size();k++){
+          if(nums[i]==cpy[k]) ret.push_back(k);
+          else if(nums[idx]==cpy[k]) ret.push_back(k);
+      }
+      return ret;
     }
 };
 // question: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
 // You can return the answer in any order.
 // Approach:
-// 1. Take two for loops
-// 2. In the first for loop, take the first element and in the second for loop, take the second element
-// 3. Check if the sum of the two elements is equal to the target
-// 4. If yes, then push the indices of the two elements in the vector and return the vector
-// 5. If no, then continue the loop
-// 6. If no such pair is found, then return an empty vector
+// 1. Take a extra vector named cpy and copy the original vector into cpy.
+// 2. Sort nums
+// 3. Calculate tosearch(target-nums[i]) for each element and find the tosearch using lower_bound.
+// 4. If found exit from the loop
+// 5. Search for the original index of the tosearch & nums[i] and store the index in ret vector.
+// 6. Return ret vector.
+
+// Time Complexity= O(nlogn) 
+// Space Complexity= O(n)
