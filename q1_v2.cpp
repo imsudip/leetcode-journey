@@ -1,6 +1,6 @@
 /*
 Author: Purnendu Tudu (purnendu2udu@gmail.com)
-q217.cpp (c) 2023
+q1_v2.cpp (c) 2023
 Desc: Two Sum
 */
 
