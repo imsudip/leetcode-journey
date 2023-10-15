@@ -1,5 +1,14 @@
+/*
+Author: Ivy Kumbhakar (ivykumbhakar855@gmail.com)
+q350.cpp (c) 2023
+Desc: Intersection of Two Arrays II
+Created:  Sun Oct 15 2023 23:15:32 GMT+0530 (India Standard Time)
+*/
+
+
 /* QUESTION :
-   Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
+   Given two integer arrays nums1 and nums2, return an array of their intersection. 
+   Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
 */
 
 #include <bits/stdc++.h>
@@ -40,5 +49,5 @@ vector<int> intersect(vector<int>& nums1, vector<int>& nums2){
   6.Return ret.
 
   TIME COMPLEXITY : O(m+n)
-  SPACE COMPLEXITY : O(n)
+  SPACE COMPLEXITY : O(m+n)
 */
