@@ -1,5 +1,5 @@
 /*Author: Sk Firoj(sk.firoj9732@gmail.com)
-  q1512.cpp (c) 2023
+  q283.cpp (c) 2023
   Desc: Move Zeroes
   Created:  Sun Oct 22 2023 19:40:48 GMT+0530 (India Standard Time)
 */
